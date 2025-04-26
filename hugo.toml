@@ -1,4 +1,4 @@
-baseURL = "https://minblogs.github.io/"
+baseURL = "https://minsblog.github.io/"
 languageCode = "ko-kr"
 theme = "PaperMod"
 

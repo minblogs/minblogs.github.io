@@ -1,7 +1,6 @@
 baseURL = "https://minblogs.github.io/"
 languageCode = "ko-kr"
 theme = "PaperMod"
-googleAnalytics = "G-7RJCHF5L4Z"
 
 enableRobotsTXT = true
 

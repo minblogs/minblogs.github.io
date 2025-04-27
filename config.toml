@@ -38,7 +38,7 @@ home = ["HTML", "RSS", "JSON"]
 [params]
 title = "MINLOG"
 description = "MINLOG - A blog about programming, mathematics, and problem solving."
-keywords = ["MIN9", "Node.js", "Mathematics", "Problem Solving"]
+keywords = ["Node.js", "Mathematics", "Problem Solving"]
 author = "MIN9"
 social = true
 socialIcons = [
@@ -52,6 +52,12 @@ ShowCodeCopyButtons = true
 ShowToc = true
 math = true
 comments = true
+
+[params.giscus]
+repo = "minsblog/minsblog.github.io"
+repoId = "R_kgDOOgJKbg"
+category = "Comments"
+categoryId = "DIC_kwDOOgJKbs4CphHu"
 
 [params.homeInfoParams]
 Title = "Moments of Inspiration, Navigating Logs"

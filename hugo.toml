@@ -37,7 +37,7 @@ home = ["HTML", "RSS", "JSON"]
 
 [params]
 title = "MINLOG"
-description = "Bubbler's dev stories"
+description = "MINLOG - A blog about programming, mathematics, and problem solving."
 keywords = ["MIN9", "Node.js", "Mathematics", "Problem Solving"]
 author = "MIN9"
 social = true

@@ -38,7 +38,8 @@ $a - (q+1)b \in S$이다. 그런데 $a - (q+1)b < a - qb = r$이므로, 이는 $
 따라서 $r < b$이다.
 
 **주장 2:** $q$와 $r$은 유일하다.  
-$a = qb + r = q^\prime b + r^\prime$이라고 가정하자. ($q, q^\prime \in \mathbb{Z}$, $0 \leq r, r^\prime < b$)
+
+$a = qb + r = q^\prime b + r^\prime$이라고 가정하자. 단, $q, q^\prime \in \mathbb{Z}$, $0 \leq r, r^\prime < b$
 
 그러면  
 $$
@@ -48,7 +49,7 @@ $$
 $$
 |r^\prime - r| = |q - q^\prime||b|
 $$
-이다. 그런데 $|r^\prime - r| < b$이므로, $|q - q^\prime| < 1$이다.  
+이다. 그런데 $|r^\prime - r| < b$이므로, $|q - q^\prime| < 1$이다.   
 $q, q^\prime$는 모두 정수이므로, $q = q^\prime$이고 따라서 $r = r^\prime$이다.
 
 # 일반화된 나눗셈 알고리즘

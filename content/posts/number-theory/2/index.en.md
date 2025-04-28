@@ -1,5 +1,5 @@
 ---
-title: 'Division Algorithm'
+title: 'Division algorithm'
 date: 2023-08-19
 draft: false
 tags: ['Math', 'Number Theory', 'Algorithm']
@@ -39,7 +39,7 @@ $\implies a - (q+1)b \in S$, but $a -(q + 1)b < a - qb = r$, which contradicts t
 and $0 \leq r, r^\prime < b \implies r^\prime - r = (q - q^\prime)b \implies |r^\prime - r| = |q - q^\prime |b$  
 and $|r^\prime - r| < b$ $\implies |q - q^\prime| < 1 \implies q = q^\prime$ and $r = r^\prime$.
 
-# Generalized Division Algorithm
+# Generalized division algorithm
 
 Given $a, b \in \mathbb{Z}$ with $b \neq 0$, there exist unique $q, r \in \mathbb{Z}$ such that
 

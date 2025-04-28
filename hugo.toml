@@ -1,0 +1,84 @@
+baseURL = "https://minsblog.github.io/"
+title = "MINLOG"
+theme = "PaperMod"
+enableRobotsTXT = true
+languageCode = "ko-kr"
+defaultContentLanguage = "ko"
+enableEmoji = true
+
+[languages]
+  [languages.ko]
+  languageName = "한국어"
+  weight = 1
+
+    [languages.ko.params]
+    dateFormat = "2006년 1월 2일"
+
+    [languages.ko.menu]
+    main = [
+      { name = "아카이브", url = "archives", weight = 1 },
+      { name = "태그", url = "tags", weight = 2 },
+      { name = "검색", url = "search", weight = 3 },
+    ]
+
+  [languages.en]
+  languageName = "English"
+  weight = 2
+
+    [languages.en.params]
+    languageAltTitle = "English"
+    dateFormat = "Jan 2, 2006"
+
+    [languages.en.menu]
+    main = [
+      { name = "Archives", url = "archives", weight = 1 },
+      { name = "Tags", url = "tags", weight = 2 },
+      { name = "Search", url = "search", weight = 3 },
+    ]
+
+  [languages.jp]
+  languageName = "日本語"
+  weight = 3
+  
+    [languages.jp.params]
+    dateFormat = "2006年1月2日"
+
+    [languages.jp.menu]
+    main = [
+      { name = "アーカイブ", url = "archives", weight = 1 },
+      { name = "タグ", url = "tags", weight = 2 },
+      { name = "検索", url = "search", weight = 3 },
+    ]
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+title = "MINLOG"
+description = "MINLOG - A blog about programming, mathematics, and problem solving."
+keywords = ["Node.js", "Mathematics", "Problem Solving"]
+author = "MIN9"
+social = true
+socialIcons = [
+  { name = "github", url = "https://github.com/min-9" },
+  { name = "instagram", url = "https://instagram.com/min9.exe" }
+]
+defaultTheme = "auto"
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+math = true
+comments = true
+
+  [params.giscus]
+  repo = "minsblog/minsblog.github.io"
+  repoId = "R_kgDOOgJKbg"
+  category = "Comments"
+  categoryId = "DIC_kwDOOgJKbs4CphHu"
+
+  [params.homeInfoParams]
+  Title = "Moments of Inspiration, Navigating Logs"
+
+  [params.assets]
+  disableHLJS = true

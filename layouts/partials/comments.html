@@ -1,4 +1,5 @@
-<script
+<div class="container_giscus">
+  <script
     src="https://giscus.app/client.js"
     data-repo={{ .Site.Params.giscus.repo }}
     data-repo-id={{ .Site.Params.giscus.repoId }}
@@ -14,4 +15,38 @@
     data-loading="lazy"
     crossorigin="anonymous"
     async
-></script>
+  ></script>
+</div>
+<script async>
+  document
+      .querySelector('div.container_giscus > script')
+      .setAttribute(
+          'data-theme',
+          localStorage.getItem('pref-theme')
+              ? localStorage.getItem('pref-theme')
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light'
+      );
+
+  document.querySelector('#theme-toggle').addEventListener('click', () => {
+      let g = document.querySelector('iframe.giscus-frame');
+      if (!g) return;
+      g.contentWindow.postMessage(
+          {
+              giscus: {
+                  setConfig: {
+                      theme: localStorage.getItem('pref-theme')
+                          ? localStorage.getItem('pref-theme') === 'dark'
+                              ? 'light'
+                              : 'dark'
+                          : document.body.className.includes('dark')
+                          ? 'light'
+                          : 'dark',
+                  },
+              },
+          },
+          'https://giscus.app'
+      );
+  });
+</script>

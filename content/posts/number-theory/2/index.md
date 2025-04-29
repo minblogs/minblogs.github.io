@@ -2,7 +2,7 @@
 title: "나눗셈 알고리즘"
 date: 2023-08-19
 draft: false
-tags: ["수학", "정수론", "알고리즘"]
+tags: ["Math", "Number Theory", "Algorithm"]
 ---
 
 # 정리

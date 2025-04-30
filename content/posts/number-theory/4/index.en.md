@@ -43,7 +43,7 @@ Some values of $-12x + 30y$ for $x, y \in \mathbb{Z}$
 
 ## Observation
 
-- There exist $x, y \in \mathbb{Z}$ such that $-12x + 30y = 6$
+- $\exists\ x, y \in \mathbb{Z}$ s.t. $-12x + 30y = 6$
 - Each number is multiple of $6$.   
   $\because -12x + 30y = 6(-2x + 5y)$
 
@@ -52,7 +52,7 @@ Some values of $-12x + 30y$ for $x, y \in \mathbb{Z}$
 # Theorem
 
 Given $a, b \in \mathbb{Z} (a \neq 0 \text{ or } b \neq 0)$, let $d = \gcd(a, b)$.   
-$\implies$ There exist $x, y \in \mathbb{Z}$ such that $ax + by = d$.
+$\implies \exists\ x, y \in \mathbb{Z}$ s.t. $ax + by = d$.
 
 ## Proof
 
@@ -65,7 +65,7 @@ Claim: $S$ is non-empty.
 - If $a > 0$, then $a = a \cdot 1 + b \cdot 0 > 0 \implies a \in S$.
 - If $a < 0$, then $-a = a \cdot (-1) + b \cdot 0 > 0 \implies -a \in S$.
 
-$\implies$ By [Well-ordering axiom](/posts/number-theory/1/#well-ordering-principle), $S$ has the smallest element $d \in S \quad \cdots (\ast)$   
+$\implies$ By [well-ordering principle](/posts/number-theory/1/#well-ordering-principle), $S$ has the smallest element $d \in S \quad \cdots (\ast)$   
 
 Write $d = ax + by$ for some $x, y \in \mathbb{Z}$
 

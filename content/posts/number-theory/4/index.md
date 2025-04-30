@@ -52,7 +52,7 @@ $\gcd(-12, 30)$을 구해 봅시다.
 # 정리
 
 $a, b \in \mathbb{Z}$이고 $(a \neq 0 \text{ 또는 } b \neq 0)$일 때, $d = \gcd(a, b)$라고 하자.  
-그러면 $\exists x, y \in \mathbb{Z}$ such that $ax + by = d$
+그러면 $\exists x, y \in \mathbb{Z}$ s.t. $ax + by = d$
 
 ## 증명
 
@@ -60,12 +60,12 @@ $S := \\{au + bv > 0\ |\ u, v \in \mathbb{Z}\\}$라고 하자.
 
 $a \neq 0$이라고 가정하자. ($b \neq 0$인 경우는 유사하게 증명됨)
 
-**Claim**: $S$는 공집합이 아니다.
+**주장**: $S$는 공집합이 아니다.
 
 - 만약 $a > 0$이면, $a = a \cdot 1 + b \cdot 0 > 0 \implies a \in S$
 - 만약 $a < 0$이면, $-a = a \cdot (-1) + b \cdot 0 > 0 \implies -a \in S$
 
-$\implies$ [정렬의 원리 (Well-ordering axiom)]에 의해 $S$는 최소 원소 $d$를 갖는다. $(\ast)$
+$\implies$ [정렬의 원리 (well-ordering principle)](/posts/number-theory/1/#정렬-원리)에 의해 $S$는 최소 원소 $d$를 갖는다. $\quad \cdots (\ast)$
 
 $d = ax + by$인 어떤 정수 $x, y$가 존재함.
 
@@ -73,8 +73,11 @@ $d = ax + by$인 어떤 정수 $x, y$가 존재함.
 
 1. $d \mid a$ 그리고 $d \mid b$
    - 나눗셈 알고리즘에 따라, $a = qd + r$인 $q, r \in \mathbb{Z}$가 존재하고 $0 \le r < d$
-   - 만약 $r > 0$이면,  
-     $r = a - qd = a - q(ax + by) = a(1 - qx) + b(-qy)$이므로 $r > 0 \implies r \in S$
+   - 만약 $r > 0$이면, 
+   $$
+   r = a - qd = a - q(ax + by) = a(1 - qx) + b(-qy)
+   $$
+   이므로 $r > 0 \implies r \in S$
    - 하지만 $r < d$이므로 $(\ast)$에 모순됨  
      $\implies r = 0 \implies a = qd \implies d \mid a$ (유사하게 $d \mid b$도 증명됨)
 

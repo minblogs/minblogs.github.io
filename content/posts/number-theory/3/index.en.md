@@ -21,7 +21,7 @@ tags: ['Math', 'Number Theory']
 
 Given $a, b \in \mathbb{Z}$ with $a \neq 0$,
 
-1. $a \mid b \overset{\text{def}}{\iff}$ there exists $c \in \mathbb{Z}$ such that $b = ac$ ($b$ is divisible by $a$)
+1. $a \mid b \overset{\text{def}}{\iff} \exists\ c \in \mathbb{Z}$ s.t. $b = ac$ ($b$ is divisible by $a$)
 2. $a \nmid b \overset{\text{def}}{\iff}$ $b$ is not divisible by $a$
 
 If $a$ is called a **divisor** (or **factor**) of $b$ and $b$ is called a **multiple** of $a$.
@@ -30,7 +30,7 @@ If $a$ is called a **divisor** (or **factor**) of $b$ and $b$ is called a **mult
 
 $4 \mid 12$, $4 \mid (-12)$, $3 \nmid 10$
 
-# Theorem (properties of divisibility)
+# Theorem
 
 Let $a, b, c \in \mathbb{Z}$. Then
 

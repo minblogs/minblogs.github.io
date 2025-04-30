@@ -66,7 +66,7 @@ $a \neq 0$ と仮定する（$b \neq 0$ の場合も同様に証明できる）�
 - $a > 0$ のとき、$a = a \cdot 1 + b \cdot 0 > 0 \implies a \in S$
 - $a < 0$ のとき、$-a = a \cdot (-1) + b \cdot 0 > 0 \implies -a \in S$
 
-よって、[整列定理 (Well-ordering axiom)](/posts/number-theory/1/#well-ordering-principle) により、$S$ は最小の要素 $d$ をもつ：$d \in S \quad \cdots (\ast)$  
+よって、[整列定理 (well-ordering axiom)](/posts/number-theory/1/#well-ordering-principle) により、$S$ は最小の要素 $d$ をもつ：$d \in S \quad \cdots (\ast)$  
 
 $d = ax + by$ となる $x, y \in \mathbb{Z}$ が存在するとする。
 

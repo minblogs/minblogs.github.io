@@ -1,5 +1,5 @@
 ---
-title: 'Division algorithm'
+title: 'Division Algorithm'
 date: 2023-08-19
 draft: false
 tags: ['Math', 'Number Theory', 'Algorithm']
@@ -7,7 +7,7 @@ tags: ['Math', 'Number Theory', 'Algorithm']
 
 # Theorem
 
-Given $a, b \in \mathbb{Z}$ with $b > 0$, there exist unique $q, r \in \mathbb{Z}$ such that
+Given $a, b \in \mathbb{Z}$ with $b > 0$, $\exists$ unique $q, r \in \mathbb{Z}$ s.t.
 
 $$
 a = qb + r \quad (0 \leq r < b)
@@ -26,7 +26,7 @@ Define $S := \\{a - xb \geq 0\ |\ x \in \mathbb{Z}\\} \subseteq \mathbb{N} \cup 
 
 > $\because a - (-|a|)b = a + |a|b \geq a + |a| \geq 0 \implies a - (-|a|)b \in S \implies S \neq \varnothing$
 
-By Well-ordering principle, $S$ has the smallest integer $r \in S$.
+By [well-ordering principle](/posts/number-theory/1/#well-ordering-principle), $S$ has the smallest integer $r \in S$.
 
 $$
 r \in S \implies \exists\ q \in \mathbb{Z} \text{ s.t. } a = qb + r \quad (r \geq 0)
@@ -39,9 +39,9 @@ $\implies a - (q+1)b \in S$, but $a -(q + 1)b < a - qb = r$, which contradicts t
 and $0 \leq r, r^\prime < b \implies r^\prime - r = (q - q^\prime)b \implies |r^\prime - r| = |q - q^\prime |b$  
 and $|r^\prime - r| < b$ $\implies |q - q^\prime| < 1 \implies q = q^\prime$ and $r = r^\prime$.
 
-# Generalized division algorithm
+# Generalized Division Algorithm
 
-Given $a, b \in \mathbb{Z}$ with $b \neq 0$, there exist unique $q, r \in \mathbb{Z}$ such that
+Given $a, b \in \mathbb{Z}$ with $b \neq 0$, $\exists$ unique $q, r \in \mathbb{Z}$ s.t.
 
 $$
 a = qb + r \quad (0 \leq r < |b|)
@@ -51,7 +51,7 @@ $$
 
 If $b < 0$, then $|b| > 0$.
 
-By Division Algorithm, $\exists\ q^\prime, r \in \mathbb{Z}$ s.t. $a = q^\prime |b| + r$ with $0 \leq r < |b|$.
+By division algorithm, $\exists\ q^\prime, r \in \mathbb{Z}$ s.t. $a = q^\prime |b| + r$ with $0 \leq r < |b|$.
 
 Since $|b| = -b$, we have $a = q^\prime (-b) + r = (-q^\prime) b + r$.
 
@@ -78,7 +78,7 @@ If $b = 2$, then $a = 2q + r$ with $q \in \mathbb{Z}$ and $0 \leq r < 2$.
 
 ## Example
 
-Show that $N = \frac{1}{3}a(a^2 + 2)$ is an integer. for all $a \in \mathbb{N}$.
+Show that $N = \frac{1}{3}a(a^2 + 2)$ is an integer. $\forall\ a \in \mathbb{N}$.
 
 {{< collapse summary="Solution" >}}
 

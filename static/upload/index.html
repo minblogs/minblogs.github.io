@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko" dir="auto">
+  <head>
+    <meta name="generator" content="Hugo 0.147.0" />
+    <script
+      src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload"
+      data-no-instant
+      defer
+    ></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>MINLOG</title>
+    <meta name="keywords" content="Node.js, Mathematics, Problem Solving" />
+    <meta
+      name="description"
+      content="MINLOG - A blog about programming, mathematics, and problem solving."
+    />
+    <meta name="author" content="MIN9" />
+    <link rel="canonical" href="/" />
+    <link
+      crossorigin="anonymous"
+      href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css"
+      integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8="
+      rel="preload stylesheet"
+      as="style"
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" />
+    <meta name="theme-color" content="#2e2e33" />
+    <meta name="msapplication-TileColor" content="#2e2e33" />
+    <link rel="alternate" type="application/rss+xml" href="/index.xml" />
+    <link rel="alternate" type="application/json" href="/index.json" />
+    <link rel="alternate" hreflang="ko" href="/" />
+    <link rel="alternate" hreflang="en" href="/en/" />
+    <link rel="alternate" hreflang="jp" href="/jp/" />
+    <noscript>
+      <style>
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --theme: rgb(29, 30, 32);
+            --entry: rgb(46, 46, 51);
+            --primary: rgb(218, 218, 219);
+            --secondary: rgb(155, 156, 157);
+            --tertiary: rgb(65, 66, 68);
+            --content: rgb(196, 196, 197);
+            --code-block-bg: rgb(46, 46, 51);
+            --code-bg: rgb(55, 56, 62);
+            --border: rgb(51, 51, 51);
+          }
+
+          .list {
+            background: var(--theme);
+          }
+
+          .list:not(.dark)::-webkit-scrollbar-track {
+            background: 0 0;
+          }
+
+          .list:not(.dark)::-webkit-scrollbar-thumb {
+            border-color: var(--theme);
+          }
+        }
+      </style>
+    </noscript>
+    <style>
+      @font-face {
+        font-display: swap;
+        font-family: 'DejaVu Sans Mono';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/DejaVuSansMono.woff2) format('woff2'),
+          url(/DejaVuSansMono.woff) format('woff');
+      }
+      code {
+        font-family: 'DejaVu Sans Mono', monospace;
+      }
+    </style>
+  </head>
+
+  <body class="list" id="top">
+    <script>
+      if (localStorage.getItem('pref-theme') === 'dark') {
+        document.body.classList.add('dark');
+      } else if (localStorage.getItem('pref-theme') === 'light') {
+        document.body.classList.remove('dark');
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+      }
+    </script>
+
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <a href="/" accesskey="h" title="MINLOG (Alt + H)">MINLOG</a>
+          <div class="logo-switches">
+            <button
+              id="theme-toggle"
+              accesskey="t"
+              title="(Alt + T)"
+              aria-label="Toggle theme"
+            >
+              <svg
+                id="moon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                ></path>
+              </svg>
+              <svg
+                id="sun"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+            <ul class="lang-switch">
+              <li>|</li>
+              <li>
+                <a href="/en/" title="English" aria-label="English">En</a>
+              </li>
+              <li>
+                <a href="/jp/" title="日本語" aria-label="日本語">Jp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul id="menu">
+          <li>
+            <a href="/archives" title="아카이브">
+              <span>아카이브</span>
+            </a>
+          </li>
+          <li>
+            <a href="/tags" title="태그">
+              <span>태그</span>
+            </a>
+          </li>
+          <li>
+            <a href="/search" title="검색">
+              <span>검색</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="first-entry home-info">
+        <header class="entry-header">
+          <h1>Upload File Storage</h1>
+        </header>
+        <div class="entry-content">
+          <p>This is a file storage for uploaded files.</p>
+          <p>
+            Appending <code>/home</code> to the end of the URL will redirect you
+            to the homepage.
+          </p>
+        </div>
+      </article>
+
+      <article class="post-entry">
+        <header class="entry-header">
+          <h2 class="entry-hint-parent">Number theory</h2>
+        </header>
+        <div class="entry-content">
+          <p>Elementary Number Theory (7th ed.) by David M. Burton</p>
+        </div>
+        <a
+          class="entry-link"
+          href="/upload/number-theory/"
+          title="Elementary Number Theory (7th ed.) by David M. Burton"
+        ></a>
+      </article>
+    </main>
+    <footer class="footer">
+      <span>&copy; 2025 <a href="/">MINLOG</a></span> ·
+      <span> Powered by 🪿 GooseBlog </span>
+    </footer>
+    <script>
+      document
+        .getElementById('theme-toggle')
+        .addEventListener('click', function () {
+          document.body.classList.toggle('dark');
+          if (document.body.classList.contains('dark')) {
+            localStorage.setItem('pref-theme', 'dark');
+          } else {
+            localStorage.removeItem('pref-theme');
+          }
+        });
+    </script>
+  </body>
+</html>

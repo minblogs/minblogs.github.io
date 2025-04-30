@@ -22,14 +22,14 @@ $$
 
 ## 証明
 
-$S := \{a - xb \geq 0 : x \in \mathbb{Z}\} \subseteq \mathbb{N} \cup \{0\}$ と定義する。よって、$S$ は空でない。
+$S := \\{a - xb \geq 0\ |\ x \in \mathbb{Z}\\} \subseteq \mathbb{N} \cup \{0\}$ と定義する。よって、$S$ は空でない。
 
 > $\because a - (-|a|)b = a + |a|b \geq a + |a| \geq 0 \implies a - (-|a|)b \in S \implies S \neq \varnothing$
 
 整列原理により、$S$ は最小の整数 $r \in S$ を持つ。
 
 $$
-r \in S \implies \exists q \in \mathbb{Z} \text{ s.t. } a = qb + r \quad (r \geq 0)
+r \in S \implies \exists\ q \in \mathbb{Z} \text{ s.t. } a = qb + r \quad (r \geq 0)
 $$
 
 **主張 1:** $0 \leq r < b$  
@@ -56,7 +56,7 @@ $$
 
 もし $b < 0$ の場合、$|b| > 0$ である。
 
-割り算アルゴリズムにより、$\exists q^\prime, r \in \mathbb{Z}$ で、$a = q^\prime |b| + r$ かつ $0 \leq r < |b|$ が成り立つ。
+割り算アルゴリズムにより、$\exists\ q^\prime, r \in \mathbb{Z}$ で、$a = q^\prime |b| + r$ かつ $0 \leq r < |b|$ が成り立つ。
 
 $|b| = -b$ なので、$a = q^\prime (-b) + r = (-q^\prime) b + r$ と書ける。
 
@@ -102,11 +102,11 @@ N = \frac{1}{3}(3q)((3q)^2 + 2) = q(9q^2 + 2)
 $$
 2. $a = 3q + 1$ の場合  
 $$
-N = \frac{1}{3}(3q + 1)((3q + 1)^2 + 2) = (3q + 1)(3q^2 + 3q + 1)
+N = \frac{1}{3}(3q + 1)((3q + 1)^2 + 2) = (3q + 1)(3q^2 + 2q + 1)
 $$
 3. $a = 3q + 2$ の場合  
 $$
-N = \frac{1}{3}(3q + 2)((3q + 2)^2 + 2) = (3q + 2)(3q^2 + 4q + 1)
+N = \frac{1}{3}(3q + 2)((3q + 2)^2 + 2) = (3q + 2)(3q^2 + 4q + 2)
 $$
 
 {{< /collapse >}}

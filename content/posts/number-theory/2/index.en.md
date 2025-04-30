@@ -22,14 +22,14 @@ In this case, $q$ is called a **quotient** and $r$ is called a **remainder.**
 
 ## Proof
 
-Define $S := \\{a - xb \geq 0 : x \in \mathbb{Z}\\} \subseteq \mathbb{N} \cup \\{0\\}$. $\implies$ $S$ is non-empty.
+Define $S := \\{a - xb \geq 0\ |\ x \in \mathbb{Z}\\} \subseteq \mathbb{N} \cup \\{0\\}$. $\implies$ $S$ is non-empty.
 
 > $\because a - (-|a|)b = a + |a|b \geq a + |a| \geq 0 \implies a - (-|a|)b \in S \implies S \neq \varnothing$
 
 By Well-ordering principle, $S$ has the smallest integer $r \in S$.
 
 $$
-r \in S \implies \exists q \in \mathbb{Z} \text{ s.t. } a = qb + r \quad (r \geq 0)
+r \in S \implies \exists\ q \in \mathbb{Z} \text{ s.t. } a = qb + r \quad (r \geq 0)
 $$
 
 **Claim 1:** $0 \leq r < b$. Suppose that $r \geq b \implies a - (q+1)b = r - b \geq 0$  
@@ -51,7 +51,7 @@ $$
 
 If $b < 0$, then $|b| > 0$.
 
-By Division Algorithm, $\exists q^\prime, r \in \mathbb{Z}$ s.t. $a = q^\prime |b| + r$ with $0 \leq r < |b|$.
+By Division Algorithm, $\exists\ q^\prime, r \in \mathbb{Z}$ s.t. $a = q^\prime |b| + r$ with $0 \leq r < |b|$.
 
 Since $|b| = -b$, we have $a = q^\prime (-b) + r = (-q^\prime) b + r$.
 
@@ -86,7 +86,7 @@ Note that $a = 3q + r$ with $q \in \mathbb{Z}$ and $0 \leq r < 3$
 $\implies a = 3q$ or $a = 3q + 1$ or $a = 3q + 2$
 
 1. $a = 3q \implies N = \frac{1}{3}(3q)((3q)^2 + 2) = q(9q^2 + 2)$
-2. $a = 3q + 1 \implies N = \frac{1}{3}(3q + 1)((3q + 1)^2 + 2) = (3q + 1)(3q^2 + 3q + 1)$
-3. $a = 3q + 2 \implies N = \frac{1}{3}(3q + 2)((3q + 2)^2 + 2) = (3q + 2)(3q^2 + 4q + 1)$ 
+2. $a = 3q + 1 \implies N = \frac{1}{3}(3q + 1)((3q + 1)^2 + 2) = (3q + 1)(3q^2 + 2q + 1)$
+3. $a = 3q + 2 \implies N = \frac{1}{3}(3q + 2)((3q + 2)^2 + 2) = (3q + 2)(3q^2 + 4q + 2)$ 
 
 {{< /collapse >}}

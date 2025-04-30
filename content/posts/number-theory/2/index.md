@@ -22,14 +22,14 @@ $$
 
 ## 증명
 
-$S := \\{a - xb \geq 0 : x \in \mathbb{Z}\\} \subseteq \mathbb{N} \cup \\{0\\}$로 정의하자. 그러면 $S$는 공집합이 아니다.
+$S := \\{a - xb \geq 0\ |\ x \in \mathbb{Z}\\} \subseteq \mathbb{N} \cup \\{0\\}$로 정의하자. 그러면 $S$는 공집합이 아니다.
 
 > $\because a - (-|a|)b = a + |a|b \geq a + |a| \geq 0 \implies a - (-|a|)b \in S \implies S \neq \varnothing$
 
 정렬 원리(Well-ordering Principle)에 의해, $S$는 최소 원소 $r \in S$를 가진다.
 
 $$
-r \in S \implies \exists q \in \mathbb{Z} \text{ s.t. } a = qb + r \quad (r \geq 0)
+r \in S \implies \exists\ q \in \mathbb{Z} \text{ s.t. } a = qb + r \quad (r \geq 0)
 $$
 
 **주장 1:** $0 \leq r < b$  
@@ -123,12 +123,12 @@ $$
 
 2. $a = 3q + 1$인 경우
 $$
-N = \frac{1}{3}(3q + 1)((3q + 1)^2 + 2) = (3q + 1)(3q^2 + 3q + 1)
+N = \frac{1}{3}(3q + 1)((3q + 1)^2 + 2) = (3q + 1)(3q^2 + 2q + 1)
 $$
 
 3. $a = 3q + 2$인 경우
 $$
-N = \frac{1}{3}(3q + 2)((3q + 2)^2 + 2) = (3q + 2)(3q^2 + 4q + 1)
+N = \frac{1}{3}(3q + 2)((3q + 2)^2 + 2) = (3q + 2)(3q^2 + 4q + 2)
 $$
 
 {{< /collapse >}}

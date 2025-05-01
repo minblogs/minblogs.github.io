@@ -1,42 +1,68 @@
 ---
-title: "수학적 귀납법과 이항 정리"
+title: '수학적 귀납법과 이항 정리'
 date: 2023-08-15
 draft: false
-tags: ["Math", "Number Theory"]
+tags: ['Math', 'Number Theory']
 ---
 
-# 정렬 원리
+# 정렬 원리 (Well-Ordering Principle)
 
-자연수의 부분집합 $S$가 공집합이 아니면 $S$는 최소 원소를 가진다.
+$S$ : $\mathbb{Z^+} = \\{0, 1, 2, \dots\\}$의 공집합이 아닌 부분집합이라 하자.  
+$\implies$ 집합 $S$는 최소 원소를 가진다   
+$\iff \exists\ a \in S$ s.t. $a \leq b$, $\forall\ b \in S$
 
-# 수학적 귀납법
+# 정리 1.2
 
-자연수 부분집합 $S$가 다음 조건을 만족한다고 가정하자.
+$S \subseteq \mathbb{N}$이 다음 조건을 만족한다고 하자.
 
-1. $1$은 $S$에 속한다.
-2. 자연수 $k$에 대해, 만약 $k \in S$이면 $k+1 \in S$이다.
+1. $1 \in S$
+2. 임의의 $k \in S$에 대해 $k + 1 \in S$
 
-그렇다면 $S = \mathbb{N}$이 성립한다.
+그렇다면 $S = \mathbb{N}$이다.
 
 ## 증명
 
-집합 $T := \mathbb{N} \setminus S$를 정의하고, $T$가 공집합이 아니라고 가정하자.
+$T := \mathbb{N} \setminus S$라고 하자. $T$가 공집합이 아니라고 가정하자.
 
-$T \subset \mathbb{N}$이므로, [정렬 원리](#정렬-원리)에 따라 $T$는 최소 원소를 가진다. 이 원소를 $m$이라 하자.
+$T \subset \mathbb{N}$이므로 [정렬 원리](#정렬-원리-well-ordering-principle)에 따라 $T$는 최소 원소 $m \in T$를 가진다.
 
-- 먼저, $m = 1$인 경우를 생각해보자. 문제의 조건에 의해 $1 \in S$이므로, $1 \notin T$가 되어야 한다. 이는 모순이다.
-- 다음으로, $m > 1$인 경우를 생각하자. 이때 $m-1$은 자연수이므로 $m-1 \in \mathbb{N}$이다. 또한, $m$이 $T$의 최소 원소이므로 $m-1 \in S$여야 한다. 그런데 조건에 의해 $k \in S$이면 $k+1 \in S$이므로, $m-1 \in S$이면 $m = (m-1)+1 \in S$이어야 한다. 이는 $m \in T$라는 가정과 모순된다.
+- $1 \notin T \implies m \geq 2 \implies m - 1 \in \mathbb{N}$
+- $m \in T \implies m \notin S \implies m - 1 \notin S \implies m - 1 \in T$  
+  이는 $m$이 $T$의 최소 원소라는 가정에 모순이다.
 
-따라서 $T$는 공집합이어야 하며, $S = \mathbb{N}$이 성립한다.
+$\therefore$ $T$는 공집합이고 $\implies S = \mathbb{N}$이다.
 
-# 이항 계수
+## 예제
 
-$n \in \mathbb{N}$, $0 \leq k \leq n$에 대해 이항 계수는 다음과 같이 정의한다.
+임의의 $n \in \mathbb{N}$에 대해 다음을 보여라.  
+$1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}$
+
+{{<collapse summary="풀이 보기">}}
+
+- $P(n) : 1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}$
+- $S := \\{n \in \mathbb{N}\ |\ P(n) \small\text{이 참인 경우}\\}$라고 정의하자.
+   1. $1 \in S \iff P(1)$이 참이다. $\left(\because P(1) : 1 = \frac{1(1+1)}{2}\right)$
+   2. $k \in S \implies k+1 \in S \iff P(k)$이 참이면 $P(k+1)$도 참이다.  
+      $\because$ $1 + 2 + \cdots + k = \frac{k(k+1)}{2}$이라면,  
+      $$
+      \begin{align*}
+      1 + 2 + \cdots + k + (k+1) &= \frac{k(k+1)}{2} + (k+1) \\\\
+                                 &= \frac{k(k+1) + 2(k+1)}{2} \\\\
+                                 &= \frac{(k+1)(k+2)}{2}
+      \end{align*}
+      $$
+
+{{</collapse>}}
+
+# 이항 계수 (Binomial Coefficient)
+
+$n \in \mathbb{N}$이고 $0 \leq k \leq n$일 때, 다음과 같이 정의한다.
+
 $$
 \binom{n}{k} := \frac{n!}{k!(n-k)!}
 $$
 
-여기서 $n!$은 자연수 $n$의 계승을 의미하며, $n$-팩토리얼(factorial)은 다음과 같이 계산됩니다.
+여기서 $n!$ (n의 팩토리얼)은 다음과 같이 정의된다:
 
 $$
 \begin{align*}
@@ -45,12 +71,9 @@ n! &= \prod_{k=1}^{n} k \\\\
 \end{align*}
 $$
 
-# 이항 정리
+# 이항 정리 (Binomial Theorem)
 
-이항식의 거듭제곱을 이항 계수를 계수로 하는 일련의 단항식들의 합으로 전개하는 정리이다.
-이항 정리를 사용하면 더욱 편리하게 계산할 수 있다.
-
-이항 정리에 따르면, 이변수 다항식 $(a+b)^{n}$을 다음과 같이 전개할 수 있다.
+이항식 $(a + b)^n$의 전개는 다음과 같이 표현할 수 있다:
 
 $$
 \begin{align*}

@@ -7,37 +7,61 @@ tags: ['Math', 'Number Theory']
 
 # Well-Ordering Principle
 
-If a subset $S$ of natural numbers is non-empty, then $S$ has a smallest element.
+$S$ : non-empty subset of $\mathbb{Z^+} = \\{0, 1, 2, ..., \\}$   
+$\implies$ $S$ has the smallest element in $S$   
+$\iff \exists\ a \in S$ s.t. $a \leq b$, $\forall\ b \in S$
 
-# Mathematical Induction
+# Theorem 1.2
 
-Assume that a subset $S$ of natural numbers satisfies the following conditions:
+Assume that a $S \subseteq \mathbb{N}$ satisfies
 
-1. $1$ is an element of $S$.
-2. For any natural number $k$, if $k \in S$, then $k+1 \in S$.
+1. $1 \in S$
+2. If $k \in S$, then $k+1 \in S$.
 
-Then, $S = \mathbb{N}$.
+Then $S = \mathbb{N}$.
 
 ## Proof
 
-Let $T := \mathbb{N} \setminus S$ be defined, and assume that $T$ is non-empty.
+Let $T := \mathbb{N} \setminus S$. Suppose that $T$ is non-empty.
 
-Since $T \subset \mathbb{N}$, by the [well-ordering principle](#well-ordering-principle), $T$ has a smallest element. Let this element be $m$.
+Since $T \subset \mathbb{N}$, by the [well-ordering principle](#well-ordering-principle), $T$ must have the smallest element $m \in T$.
 
--   First, consider the case where $m = 1$. By the given conditions, $1 \in S$, so $1 \notin T$. This is a contradiction.
--   Next, consider the case where $m > 1$. In this case, $m-1$ is a natural number, so $m-1 \in \mathbb{N}$. Additionally, since $m$ is the smallest element of $T$, $m-1$ must be in $S$. However, by the condition, if $k \in S$, then $k+1 \in S$. Therefore, if $m-1 \in S$, then $m = (m-1)+1 \in S$, which contradicts the assumption that $m \in T$.
+- $1 \notin T \implies m \geq 2 \implies m-1 \in \mathbb{N}$
+- Since $m \in T$, $m \notin S \implies m-1 \notin S \implies m-1 \in T$, which is a   
+  contradiction to the assumption : $m \in T$ is the smallest element in $T$
 
-Thus, $T$ must be empty, and it follows that $S = \mathbb{N}$.
+$\therefore$ $T$ is empty $\implies S = \mathbb{N}$
+
+## Example
+
+Show that $1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}$, $\forall\ n \in \mathbb{N}$
+
+{{<collapse summary="Solution">}}
+
+- $P(n) : 1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}$
+- Define $S := \\{n \in \mathbb{N}\ |\ P(n) \text{ is true}\\}$
+   1. $1 \in S \iff P(1)$ is true ($\because P(1) : 1 = \frac{1(1+1)}{2}$)
+   2. if $k \in S$, then $k+1 \in S \iff P(k)$ is true, then $P(k+1)$ is true   
+      $\because$ if $1 + 2 + \cdots + k = \frac{k(k+1)}{2}$, then   
+      $$
+      \begin{align*}
+      1 + 2 + \cdots + k + (k+1) &= \frac{k(k+1)}{2} + (k+1) \\\\
+                                 &= \frac{k(k+1) + 2(k+1)}{2} \\\\
+                                 &= \frac{(k+1)(k+2)}{2}
+      \end{align*}
+      $$
+
+{{</collapse>}}
 
 # Binomial Coefficient
 
-For $n \in \mathbb{N}$ and $0 \leq k \leq n$, the binomial coefficient is defined as:
+Let $n \in \mathbb{N}$ and $0 \leq k \leq n$. Then we define
 
 $$
 \binom{n}{k} := \frac{n!}{k!(n-k)!}
 $$
 
-Here, $n!$ represents the factorial of the natural number $n$, which is calculated as follows:
+where $n!$ is the factorial of $n$ defined as
 
 $$
 \begin{align*}
@@ -48,9 +72,7 @@ $$
 
 # Binomial Theorem
 
-The binomial Theorem is a formula that expands a binomial expression raised to a power as a sum of terms involving binomial coefficients. It provides a convenient way to perform these calculations.
-
-According to the binomial Theorem, the expansion of the binomial expression $(a+b)^n$ can be written as:
+The expansion of the binomial expression $(a+b)^n$ can be written as:
 
 $$
 \begin{align*}

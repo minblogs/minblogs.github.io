@@ -1,11 +1,11 @@
 ---
-title: 'Division Algorithm'
+title: "Division Algorithm"
 date: 2023-08-19
 draft: false
-tags: ['Math', 'Number Theory', 'Algorithm']
+tags: ["Math", "Number Theory", "Algorithm"]
 ---
 
-# Theorem
+# Theorem 2.1
 
 Given $a, b \in \mathbb{Z}$ with $b > 0$, $\exists$ unique $q, r \in \mathbb{Z}$ s.t.
 
@@ -13,12 +13,12 @@ $$
 a = qb + r \quad (0 \leq r < b)
 $$
 
-In this case, $q$ is called a **quotient** and $r$ is called a **remainder.**
+In this case, $q$ is called a **quotient** and $r$ is called a **remainder**.
 
 ## Example
 
-1. $a = 23, b = 5 \implies 23 = 4 \cdot 5 + 3 \implies q = 4, r = 3$
-2. $a = -23, b = 5 \implies -23 = (-5) \cdot 5 + 2 \implies q = -5, r = 2$
+1. $a = 23$, $b = 5$ $\implies 23 = 4 \cdot 5 + 3 \implies$ $q = 4$, $r = 3$
+2. $a = -23$, $b = 5$ $\implies -23 = (-5) \cdot 5 + 2 \implies$ $q = -5$, $r = 2$
 
 ## Proof
 
@@ -39,7 +39,7 @@ $\implies a - (q+1)b \in S$, but $a -(q + 1)b < a - qb = r$, which contradicts t
 and $0 \leq r, r^\prime < b \implies r^\prime - r = (q - q^\prime)b \implies |r^\prime - r| = |q - q^\prime |b$  
 and $|r^\prime - r| < b$ $\implies |q - q^\prime| < 1 \implies q = q^\prime$ and $r = r^\prime$.
 
-# Generalized Division Algorithm
+# Corollary
 
 Given $a, b \in \mathbb{Z}$ with $b \neq 0$, $\exists$ unique $q, r \in \mathbb{Z}$ s.t.
 
@@ -78,7 +78,7 @@ If $b = 2$, then $a = 2q + r$ with $q \in \mathbb{Z}$ and $0 \leq r < 2$.
 
 ## Example
 
-Show that $N = \frac{1}{3}a(a^2 + 2)$ is an integer. $\forall\ a \in \mathbb{N}$.
+Show that $N = \frac{1}{3}a(a^2 + 2)$ is an integer $\forall\ a \in \mathbb{N}$.
 
 {{< collapse summary="Solution" >}}
 

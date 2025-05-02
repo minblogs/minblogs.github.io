@@ -1,8 +1,8 @@
 ---
-title: 'Greatest Common Divisor'
+title: "Greatest Common Divisor"
 date: 2023-08-23
 draft: false
-tags: ['Math', 'Number Theory']
+tags: ["Math", "Number Theory"]
 ---
 
 # Definition
@@ -16,9 +16,9 @@ In this case we write $d = \gcd(a, b)$
 
 ## Summary
 
-- Find all positive divisors of $a$ and $b$.
-- Find all common divisors.
-- Choose the greatest one.
+1. Find all positive divisors of $a$ and $b$.
+2. Find all common divisors.
+3. Choose the greatest one.
 
 ## Example
 
@@ -28,7 +28,9 @@ Find $\gcd(-12, 30)$.
    - $-12$: $1, 2, 3, 4, 6, 12$
    - $30$: $1, 2, 3, 5, 6, 10, 15, 30$
 2. All common positive divisors of $12$ and $30$: $1, 2, 3, 6$
-3. $\therefore \gcd(-12, 30) = 6$
+3. $\max\\{1, 2, 3, 6\\} = 6$
+
+$\therefore \gcd(-12, 30) = 6$
 
 Some values of $-12x + 30y$ for $x, y \in \mathbb{Z}$
 
@@ -49,7 +51,7 @@ Some values of $-12x + 30y$ for $x, y \in \mathbb{Z}$
 
 > Recall: $\boxed{\gcd(-12, 30) = 6}$
 
-# Theorem
+# Theorem 2.3
 
 Given $a, b \in \mathbb{Z} (a \neq 0 \text{ or } b \neq 0)$, let $d = \gcd(a, b)$.   
 $\implies \exists\ x, y \in \mathbb{Z}$ s.t. $ax + by = d$.
@@ -82,7 +84,7 @@ Now we show that Claim: $d = \gcd(a, b)$ (Recall: $d = ax + by$ for $x, y \in \m
 
 $\therefore d = \gcd(a, b)$
 
-# Corollary
+# Corollary 2.3
 
 Given $a, b \in \mathbb{Z} (a \neq 0 \text{ or } b \neq 0)$, let $d = \gcd(a, b)$. Then
 
@@ -92,7 +94,7 @@ $$
 
 ## Proof
 
-By Theorem, $d = ax_0 + by_0$ for some $x_0, y_0 \in \mathbb{Z}$.
+By [Theorem 2.3](/posts/number-theory/4/#theorem-23), $d = ax_0 + by_0$ for some $x_0, y_0 \in \mathbb{Z}$.
 
 1. $(B \subseteq A)$ Let $kd \in B$. Then $kd = k(ax_0 + by_0) = a(kx_0) + b(ky_0) \in A$
 2. $(A \subseteq B)$ Let $ax + by \in A$.   

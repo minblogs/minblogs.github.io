@@ -1,8 +1,8 @@
 ---
-title: '수학적 귀납법과 이항 정리'
+title: "수학적 귀납법과 이항 정리"
 date: 2023-08-15
 draft: false
-tags: ['Math', 'Number Theory']
+tags: ["Math", "Number Theory"]
 ---
 
 # 정렬 원리 (Well-Ordering Principle)

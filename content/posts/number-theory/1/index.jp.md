@@ -2,7 +2,7 @@
 title: "数学的帰納法と二項定理"
 date: 2023-08-15
 draft: false
-tags: ["数学", "数論"]
+tags: ["Math", "Number Theory"]
 ---
 
 # 整列原理

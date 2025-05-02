@@ -1,8 +1,8 @@
 ---
-title: 'Mathematical Induction and Binomial Theorem'
+title: "Mathematical Induction and Binomial Theorem"
 date: 2023-08-15
 draft: false
-tags: ['Math', 'Number Theory']
+tags: ["Math", "Number Theory"]
 ---
 
 # Well-Ordering Principle

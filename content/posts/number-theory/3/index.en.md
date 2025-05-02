@@ -1,8 +1,8 @@
 ---
-title: 'Divisor and Multiple'
+title: "Divisor and Multiple"
 date: 2023-08-22
 draft: false
-tags: ['Math', 'Number Theory']
+tags: ["Math", "Number Theory"]
 ---
 
 <style>
@@ -26,11 +26,11 @@ Given $a, b \in \mathbb{Z}$ with $a \neq 0$,
 
 If $a$ is called a **divisor** (or **factor**) of $b$ and $b$ is called a **multiple** of $a$.
 
-## Examples
+## Example
 
 $4 \mid 12$, $4 \mid (-12)$, $3 \nmid 10$
 
-# Theorem
+# Theorem 2.2
 
 Let $a, b, c \in \mathbb{Z}$. Then
 

@@ -5,7 +5,7 @@ draft: false
 tags: ["Math", "Number Theory"]
 ---
 
-# 정렬 원리 (Well-Ordering Principle)
+# 정렬 원리
 
 $S$ : $\mathbb{Z^+} = \\{0, 1, 2, \dots\\}$의 공집합이 아닌 부분집합이라 하자.  
 $\implies$ 집합 $S$는 최소 원소를 가진다   
@@ -24,7 +24,7 @@ $S \subseteq \mathbb{N}$이 다음 조건을 만족한다고 하자.
 
 $T := \mathbb{N} \setminus S$라고 하자. $T$가 공집합이 아니라고 가정하자.
 
-$T \subset \mathbb{N}$이므로 [정렬 원리](#정렬-원리-well-ordering-principle)에 따라 $T$는 최소 원소 $m \in T$를 가진다.
+$T \subset \mathbb{N}$이므로 [정렬 원리](#정렬-원리)에 따라 $T$는 최소 원소 $m \in T$를 가진다.
 
 - $1 \notin T \implies m \geq 2 \implies m - 1 \in \mathbb{N}$
 - $m \in T \implies m \notin S \implies m - 1 \notin S \implies m - 1 \in T$  
@@ -54,7 +54,7 @@ $1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}$
 
 {{</collapse>}}
 
-# 이항 계수 (Binomial Coefficient)
+# 이항 계수
 
 $n \in \mathbb{N}$이고 $0 \leq k \leq n$일 때, 다음과 같이 정의한다.
 
@@ -71,7 +71,7 @@ n! &= \prod_{k=1}^{n} k \\\\
 \end{align*}
 $$
 
-# 이항 정리 (Binomial Theorem)
+# 이항 정리
 
 이항식 $(a + b)^n$의 전개는 다음과 같이 표현할 수 있다:
 

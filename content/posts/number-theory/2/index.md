@@ -13,7 +13,7 @@ $$
 a = qb + r \quad (0 \leq r < b)
 $$
 
-이때, $q$를 **몫(quotient)**, $r$을 **나머지(remainder)**라고 한다.
+이때, $q$를 **몫(quotient)**, $r$을 <b>나머지(remainder)</b>라고 한다.
 
 ## 예시
 
@@ -28,7 +28,7 @@ $\implies S$는 공집합이 아니다.
 
 > $\because\ a - (-|a|)b = a + |a|b \geq a + |a| \geq 0 \implies a - (-|a|)b \in S \implies S \neq \varnothing$
 
-[정렬 원리](/posts/number-theory/1/#well-ordering-principle)에 따라 $S$에는 최소 원소 $r \in S$가 존재한다.
+[정렬 원리](/posts/number-theory/1/#정렬-원리)에 따라 $S$에는 최소 원소 $r \in S$가 존재한다.
 
 $$
 r \in S \implies \exists\ q \in \mathbb{Z} \text{ s.t. } a = qb + r \quad (r \geq 0)

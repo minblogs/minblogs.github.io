@@ -1,8 +1,8 @@
 ---
-title: '約数と倍数'
+title: "約数と倍数"
 date: 2023-08-22
 draft: false
-tags: ['数学', '数論']
+tags: ["Math", "Number Theory"]
 ---
 
 <style>
@@ -28,7 +28,7 @@ $a, b \in \mathbb{Z}$ かつ $a \neq 0$ のとき、
 
 ## 例
 
-$4 \mid 12,\ 4 \mid (-12),\ 3 \nmid 10$
+$4 \mid 12$, $4 \mid (-12)$, $3 \nmid 10$
 
 # 定理（整除性の性質）
 

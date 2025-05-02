@@ -1,8 +1,8 @@
 ---
-title: '약수와 배수'
+title: "약수와 배수"
 date: 2023-08-22
 draft: false
-tags: ['Math', 'Number Theory']
+tags: ["Math", "Number Theory"]
 ---
 
 <style>

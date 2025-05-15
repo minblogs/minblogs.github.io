@@ -2,7 +2,7 @@
 title: "서로소"
 date: 2023-08-24
 draft: false
-tags: ["Math", "Number Theory"]
+tags: ["Mathematics", "Number Theory"]
 ---
 
 # 정의

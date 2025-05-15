@@ -2,10 +2,10 @@
 title: "Greatest Common Divisor"
 date: 2023-08-23
 draft: false
-tags: ["Math", "Number Theory"]
+tags: ["Mathematics", "Number Theory"]
 ---
 
-# Definition
+# Definition 2.2
 
 Let $a, b \in \mathbb{Z}$. The **greatest common divisor** of $a$ and $b$ is the positive integer $d$ satisfying
 
@@ -84,7 +84,7 @@ Now we show that Claim: $d = \gcd(a, b)$ (Recall: $d = ax + by$ for $x, y \in \m
 
 $\therefore d = \gcd(a, b)$
 
-# Corollary 2.3
+# Corollary
 
 Given $a, b \in \mathbb{Z} (a \neq 0 \text{ or } b \neq 0)$, let $d = \gcd(a, b)$. Then
 

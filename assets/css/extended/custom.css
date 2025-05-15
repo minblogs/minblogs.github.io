@@ -1,0 +1,67 @@
+:root {
+  --bronze: #ad5600;
+  --silver: #435f7a;
+  --gold: #ec9a00;
+  --platinum: #27e2a4;
+  --diamond: #00b4fc;
+  --ruby: #ff0062;
+}
+
+blockquote a.boj-link {
+  display: block;
+  width: fit-content !important;
+  table.boj {
+    width: fit-content;
+  }
+  box-shadow: none;
+
+  &:hover {
+    td.boj-name {
+      text-decoration: underline;
+    }
+  }
+}
+
+table.boj {
+  td.boj-name {
+    min-width: fit-content !important;
+    border: none !important;
+  }
+
+  td.tier:has(img[alt='tier']) {
+    min-width: 1.5rem;
+    border: none;
+  }
+}
+
+img[alt='tier'] {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.1rem 0 0 0;
+  vertical-align: middle;
+}
+
+h1.entry-hint-parent {
+  display: block;
+}
+
+.entry-content {
+  display: flex;
+  gap: 1rem;
+}
+
+body.dark {
+  img[alt='ps_solved'].dark {
+    display: inline-block;
+  }
+  img[alt='ps_solved'].light {
+    display: none;
+  }
+}
+
+img[alt='ps_solved'].dark {
+  display: none;
+}
+img[alt='ps_solved'].light {
+  display: inline-block;
+}

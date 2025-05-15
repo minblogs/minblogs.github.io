@@ -2,7 +2,7 @@
 title: "약수와 배수"
 date: 2023-08-22
 draft: false
-tags: ["Math", "Number Theory"]
+tags: ["Mathematics", "Number Theory"]
 ---
 
 <style>

@@ -2,7 +2,7 @@
 title: "Division Algorithm"
 date: 2023-08-19
 draft: false
-tags: ["Math", "Number Theory", "Algorithm"]
+tags: ["Mathematics", "Number Theory", "Algorithm"]
 ---
 
 # Theorem 2.1
@@ -69,7 +69,7 @@ $$
 a = qb + r \quad (q \in \mathbb{Z}, 0 \leq r < b)
 $$
 
-## Definition
+## Definition 2.1
 
 If $b = 2$, then $a = 2q + r$ with $q \in \mathbb{Z}$ and $0 \leq r < 2$.
 

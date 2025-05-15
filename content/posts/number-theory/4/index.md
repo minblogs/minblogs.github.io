@@ -2,7 +2,7 @@
 title: "최대공약수"
 date: 2023-08-23
 draft: false
-tags: ["Math", "Number Theory"]
+tags: ["Mathematics", "Number Theory"]
 ---
 
 # 정의

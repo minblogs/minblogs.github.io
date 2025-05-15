@@ -2,7 +2,7 @@
 title: "Divisor and Multiple"
 date: 2023-08-22
 draft: false
-tags: ["Math", "Number Theory"]
+tags: ["Mathematics", "Number Theory"]
 ---
 
 <style>
@@ -17,7 +17,7 @@ tags: ["Math", "Number Theory"]
   }
 </style>
 
-# Definition
+# Definition 2.1
 
 Given $a, b \in \mathbb{Z}$ with $a \neq 0$,
 

@@ -2,10 +2,10 @@
 title: "Relatively Prime"
 date: 2023-08-24
 draft: false
-tags: ["Math", "Number Theory"]
+tags: ["Mathematics", "Number Theory"]
 ---
 
-# Definition
+# Definition 2.3
 
 Given $a, b \in \mathbb{Z}$ (at least one of them is not zero),
 <div style="text-align: center;">

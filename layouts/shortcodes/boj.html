@@ -1,1 +1,34 @@
-<a href="https://boj.kr/{{ .Get 0 }}">{{ .Get 0 }}. {{ .Get 1 }}</a>
+<blockquote>
+  <a href="https://boj.kr/{{ .Get 0 }}" target="_blank" class="boj-link">
+    <table class="boj">
+      <tbody>
+        <tr>
+          <td class="tier">
+            <img src="https://static.solved.ac/tier_small/0.svg" alt="tier" />
+          </td>
+          <td class="boj-name">
+            <b>{{ .Get 1 }}</b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </a>
+</blockquote>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if ("{{ .Get 2 }}" === "") return;
+    const [c, n] = "{{ .Get 2 }}".split('');
+    const map = {
+      b: 0,
+      s: 1,
+      g: 2,
+      p: 3,
+      d: 4,
+      r: 5,
+    }
+    const level = map[c] * 5 + (6 - n)
+    const img = document.querySelector('img[alt="tier"]');
+    img.src = `https://static.solved.ac/tier_small/${level}.svg`;
+})
+</script>

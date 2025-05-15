@@ -66,10 +66,7 @@ enableEmoji = true
 
   [params.homeInfoParams]
     Title = "Moments of Inspiration, Navigating Logs"
-    Content = """&nbsp;
-    [![Solved.ac Profile](https://mazassumnida.wtf/api/v2/generate_badge?boj=mg07315)](https://solved.ac/mg07315/)
-    {{<ps>}}
-    """
+    Content = """{{<ps>}}"""
 
   [params.assets]
     disableHLJS = true

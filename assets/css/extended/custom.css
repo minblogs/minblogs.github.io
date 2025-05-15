@@ -45,9 +45,20 @@ h1.entry-hint-parent {
   display: block;
 }
 
-.entry-content {
+div.ps {
   display: flex;
   gap: 1rem;
+}
+
+div.mazandi {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+img[alt='ps_solved'] {
+  width: 100%;
+  height: 100%;
 }
 
 body.dark {

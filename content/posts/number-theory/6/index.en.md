@@ -117,8 +117,6 @@ Remark: This solution is not unique. See Theorem 2.9.
 How can we find $x, y \in \mathbb{Z}$ s.t. $12378x + 3054y = 6$?
 
 {{<collapse summary="Solution">}}
-<div style="display: flex; justify-content: space-around">
-
 $$
 \begin{align*}
 12378 &= 4 \cdot 3054 + 162 \\\\
@@ -126,14 +124,10 @@ $$
 162 &= 1 \cdot 138 + 24 \\\\
 138 &= 5 \cdot 24 + 18 \\\\
 24 &= 1 \cdot 18 + 6 \\\\
-18 &= 3 \cdot 6
-\end{align*} \\\\
+18 &= 3 \cdot 6 \\\\
 \ \\\\
-\implies \gcd(12378, 3054) = 6
-$$
-
-$$
-\begin{align*}
+\implies &\gcd(12378, 3054) = 6 \\\\
+\ \\\\ 
 6 &= 24 - 18 \\\\
 &= 24 - (138 - 5 \cdot 24) \\\\
 &= -138 + 6 \cdot 24 = -138 + 6 \cdot (162 - 138) \\\\
@@ -144,7 +138,6 @@ $$
 &= 12378 \cdot 132 + 3054 \cdot (-535)
 \end{align*}
 $$
-</div>
 $\therefore x = 132, y = -535$ are one of solutions of $12378x + 3054y = 6$
 {{</collapse>}}
 
@@ -161,13 +154,10 @@ b &= q_2 r_1 + r_2, & 0 &< r_2 < r_1 \\\\
 r_1 &= q_3 r_2 + r_3, & 0 &< r_3 < r_2 \\\\
 & \qquad \qquad \vdots \\\\
 r_{n-2} &= q_{n} r_{n-1} + r_n, & 0 &< r_n < r_{n-1} \\\\
-r_{n-1} &= q_{n+1} r_n
-\end{align*}
-$$
-$\implies r_n = \gcd(a, b)$
-
-$$
-\begin{align*}
+r_{n-1} &= q_{n+1} r_n \\\\
+\ \\\\ 
+\implies &\gcd(a, b) = r_n \\\\
+\ \\\\ 
 ka &= q_1 (kb) + kr_1, & 0 &< kr_1 < kb \\\\
 kb &= q_2 (kr_1) + kr_2, & 0 &< kr_2 < kr_1 \\\\
 kr_1 &= q_3 (kr_2) + kr_3, & 0 &< kr_3 < kr_2 \\\\

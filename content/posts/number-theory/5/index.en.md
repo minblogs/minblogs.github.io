@@ -8,7 +8,7 @@ tags: ["Mathematics", "Number Theory"]
 # Definition 2.3
 
 Given $a, b \in \mathbb{Z}$ (at least one of them is not zero),
-<div style="text-align: center;">
+<div style="text-align: center; margin: 1rem 0;">
 $a, b$ are called <b>relatively prime</b> $\overset{\text{def}}{\iff} \gcd(a, b) = 1$.
 </div>
 

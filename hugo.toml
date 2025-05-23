@@ -72,7 +72,7 @@ enableEmoji = true
     disableHLJS = true
 
 [markup]
+  defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-

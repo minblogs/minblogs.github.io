@@ -1,7 +1,39 @@
-<div class="ps">
-  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=mg07315" alt="solvedac">
+<div class="carousel">
+  <div class="skeleton">
+    <img src="/upload/loading.webp" alt="loading" />
+  </div>
+  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=mg07315" alt="solvedac" />
   <div class="mazandi">
     <img src="https://mazandi.herokuapp.com/api?handle=mg07315&theme=warm" alt="ps_solved" class="light" />
     <img src="https://mazandi.herokuapp.com/api?handle=mg07315&theme=dark" alt="ps_solved" class="dark" />
   </div>
 </div>
+
+<script>
+const skeleton = document.querySelector('.skeleton');
+const carousel = document.querySelector('.carousel');
+
+window.onload = function() {
+  skeleton.style.display = 'none';
+  carousel.style.overflowX = 'auto';
+}
+
+function updateCarouselHeight() {
+  const carousel = document.querySelector('.carousel');
+  const image = document.querySelector('img[alt="solvedac"]');
+
+  const setHeight = () => {
+    carousel.style.height = `${image.clientHeight * 1.1}px`;
+  };
+
+  if (!image.complete) {
+    image.addEventListener('load', setHeight);
+  } else {
+    setHeight();
+  }
+}
+
+window.addEventListener('DOMContentLoaded', updateCarouselHeight);
+window.addEventListener('resize', updateCarouselHeight);
+
+</script>

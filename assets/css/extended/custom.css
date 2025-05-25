@@ -7,6 +7,12 @@
   --ruby: #ff0062;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+img text {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 blockquote a.boj-link {
   display: block;
   width: fit-content !important;
@@ -84,8 +90,8 @@ img[alt='ps_solved'].light {
 
 /*  */
 
-.carousel {
-  /* overflow-x: auto; */
+/* .carousel {
+  overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
 
@@ -97,10 +103,54 @@ img[alt='ps_solved'].light {
   &::column {
     scroll-snap-align: center;
   }
-}
+} */
 
 .skeleton {
   height: 100%;
   display: grid;
   place-items: center;
+}
+
+.carousel {
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  aspect-ratio: 350 / 170;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 350 / 170;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+div.slide {
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 350 / 170;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+div.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  & button {
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+
+    &.active {
+      background-color: var(--primary);
+    }
+  }
 }

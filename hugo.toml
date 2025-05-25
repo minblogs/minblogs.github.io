@@ -48,7 +48,8 @@ enableEmoji = true
   social = true
   socialIcons = [
     { name = "github", url = "https://github.com/min-9" },
-    { name = "instagram", url = "https://instagram.com/min9.exe" }
+    { name = "instagram", url = "https://instagram.com/min9.exe" },
+    { name = "baekjoon", url = "https://www.acmicpc.net/user/mg07315" }
   ]
   defaultTheme = "auto"
   ShowPostNavLinks = true

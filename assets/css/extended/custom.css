@@ -158,3 +158,10 @@ div.controls {
 ul.list-marked li::marker {
   content: '✔️ ';
 }
+
+img[title='w-8'] {
+  width: 20rem;
+  margin: 0.1rem 0 0 0;
+  vertical-align: middle;
+  margin: 0 auto;
+}

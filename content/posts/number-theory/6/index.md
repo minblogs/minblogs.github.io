@@ -15,20 +15,20 @@ tags: ["Mathematics", "Number Theory", "Algorithm", "Euclidean Algorithm"]
 # 정의
 
 1. $a = q_1 b + r_1$ (단, $0 \leq r_1 < b$)   
-$r_1 = 0$이면 $a = q_1 b$이고 $\gcd(a, b) = b$이다.  
-$r_1 > 0$이면 다음 단계로 진행한다.
+$r_1 = 0$&nbsp;이면 $a = q_1 b$&nbsp;이고 $\gcd(a, b) = b$&nbsp;이다.  
+$r_1 > 0$&nbsp;이면 다음 단계로 진행한다.
 2. $b = q_2 r_1 + r_2$ (단, $0 \leq r_2 < r_1$)  
-$r_2 = 0$이면 여기서 중단한다.  
-$r_2 > 0$이면 다음 단계로 진행한다.
+$r_2 = 0$&nbsp;이면 여기서 중단한다.  
+$r_2 > 0$&nbsp;이면 다음 단계로 진행한다.
 3. $r_1 = q_3 r_2 + r_3$ (단, $0 \leq r_3 < r_2$)  
-$r_3 = 0$이면 여기서 중단한다.  
-$r_3 > 0$이면 다음 단계로 진행한다.
+$r_3 = 0$&nbsp;이면 여기서 중단한다.  
+$r_3 > 0$&nbsp;이면 다음 단계로 진행한다.
 
 이 과정을 반복하면 다음과 같은 감소 수열을 얻게 된다:
 
-<div style="text-align: center;">
-$b > r_1 > r_2 > r_3 > \cdots > r_n \geq 0$ (이 과정은 유한한 단계 내에 반드시 종료된다.)
-</div>
+{{<mjx>}}
+$b > r_1 > r_2 > r_3 > \cdots > r_n \geq 0$ (이 과정은 유한하게 끝난다)
+{{</mjx>}}
 
 ## 보조정리 (Lemma)
 
@@ -36,20 +36,20 @@ $a = qb + r \implies \gcd(a, b) = \gcd(b, r)$
 
 ## 증명
 
-$d = \gcd(a, b)$라고 하자.
+$d = \gcd(a, b)$&nbsp;라고 하자.
 
 1. $d \mid a$ 그리고 $d \mid b$ 이므로, $d \mid (a - qb) \implies d \mid r \implies d \mid b$, $d \mid r$.
-2. 어떤 수 $c$가 $b \mid c$ 이고 $r \mid c$ 이면, $c \mid (qb + r) \implies c \mid a \implies c \mid a$, $c \mid b$.
+2. 어떤 수 $c$&nbsp;가 $b \mid c$ 이고 $r \mid c$ 이면, $c \mid (qb + r) \implies c \mid a \implies c \mid a$, $c \mid b$.
 
-$d = \gcd(a, b)$이므로 $c \leq d$임.
+$d = \gcd(a, b)$&nbsp;이므로 $c \leq d$&nbsp;이다.
 
-(1)과 (2)에 의해 $d = \gcd(b, r)$이 성립함.
+(1)과 (2)에 의해 $d = \gcd(b, r)$&nbsp;이 성립함.
 
 $\therefore \gcd(a, b) = \gcd(b, r)$
 
 ## 예제
 
-1. $\gcd(48, 18)$을 구하라.
+1. $\gcd(48, 18)$&nbsp;를 구하라.
 
 {{<collapse summary="풀이 보기">}}
 $48$의 양의 약수: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48  
@@ -59,7 +59,7 @@ $\implies$ 공통된 양의 약수: 1, 2, 3, 6
 $\therefore \gcd(48, 18) = 6$
 {{</collapse>}}
 
-2. $\gcd(12378, 3054)$를 구하라.
+2. $\gcd(12378, 3054)$&nbsp;를 구하라.
 
 {{<collapse summary="풀이 보기">}}
 $$
@@ -78,13 +78,13 @@ $\therefore \gcd(12378, 3054) = 6$
 
 # 활용
 
-$x, y \in \mathbb{Z}$ 중 $ax + by = \gcd(a, b)$를 만족하는 정수를 구하라.
+$x, y \in \mathbb{Z}$ 중 $ax + by = \gcd(a, b)$&nbsp;를 만족하는 정수를 구하라.
 
 [정리 2.3](/posts/number-theory/4/#theorem-23)에 의해 $\exists\ x, y \in \mathbb{Z}$ s.t. $ax + by = \gcd(a, b)$
 
 ## 질문
 
-$48x + 18y = 6$을 만족하는 $x, y \in \mathbb{Z}$를 구하라.
+$48x + 18y = 6$을 만족하는 $x, y \in \mathbb{Z}$&nbsp;를 구하라.
 
 {{<collapse summary="풀이 보기">}}
 <div style="display: flex; justify-content: space-around">
@@ -114,7 +114,7 @@ $\therefore x = -1,\ y = 3$
 
 ## 예제
 
-$12378x + 3054y = 6$을 만족하는 정수 $x, y$를 구하라.
+$12378x + 3054y = 6$을 만족하는 정수 $x, y$&nbsp;를 구하라.
 
 {{<collapse summary="풀이 보기">}}
 $$
@@ -143,7 +143,7 @@ $\therefore x = 132,\ y = -535$는 $12378x + 3054y = 6$의 해 중 하나이다.
 
 # 정리 2.7
 
-$k > 0$일 때, $\gcd(ka, kb) = k \cdot \gcd(a, b)$
+$k > 0$&nbsp;일 때, $\gcd(ka, kb) = k \cdot \gcd(a, b)$
 
 ## 증명
 

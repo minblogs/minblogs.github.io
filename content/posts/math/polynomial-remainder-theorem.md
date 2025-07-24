@@ -43,10 +43,12 @@ $$
 $x$&nbsp;에 관계 없이 항등식 이므로, 각 항의 계수가 모두 0이어야 한다.
 따라서 다음과 같은 연립 방정식을 얻는다:
 $$
+\begin{cases}
 \begin{align*}
 q(x) - p(x) &= 0 \\\\
 q(x) + p(x) &= 2k
 \end{align*}
+\end{cases}
 $$
 이 연립 방정식에서 $q(x) = p(x)$&nbsp;이므로, $q(x) + p(x) = 2q(x) = 2k$&nbsp;가 된다.
 따라서 $q(x) = k$&nbsp;가 되고, $p(x) = k$&nbsp;가 된다.

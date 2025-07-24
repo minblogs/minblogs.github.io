@@ -5,6 +5,11 @@
   --platinum: #27e2a4;
   --diamond: #00b4fc;
   --ruby: #ff0062;
+  --link: #3366cc;
+}
+
+.dark {
+  --link: #6699cc;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
@@ -164,4 +169,21 @@ img[title='w-8'] {
   margin: 0.1rem 0 0 0;
   vertical-align: middle;
   margin: 0 auto;
+}
+
+a.footnote {
+  color: var(--link);
+  text-decoration: none;
+  box-shadow: none;
+  &:hover {
+    box-shadow: 0 1px;
+  }
+}
+
+a.external {
+  background-image: url(https://ko.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/link-external-small-ltr-progressive.svg?fb64d);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 0.857em;
+  padding-right: 1em;
 }
